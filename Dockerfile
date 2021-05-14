@@ -36,7 +36,7 @@ RUN sudo apt-get install -y nodejs
 RUN git config --global user.name "Kavin Shanbhag"
 RUN git config --global user.email "kavinplays@icloud.com"
 RUN sudo apt install build-essential manpages-dev -y
-RUN sudo code-server --install-extension ~/home/coder/code-server/cpptools-linux.vsix
+RUN sudo code-server --install-extension code-server/cpptools-linux.vsix
 
 # Port
 ENV PORT=8080
