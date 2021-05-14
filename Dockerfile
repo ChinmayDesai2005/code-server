@@ -33,9 +33,6 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
 RUN sudo apt-get install -y nodejs
-RUN sudo apt-get install -y python3
-RUN sudo apt-get install -y python3-pip
-RUN sudo pip3 install numpy
 RUN git config --global user.name "Kavin Shanbhag"
 RUN git config --global user.email "kavinplays@icloud.com"
 
