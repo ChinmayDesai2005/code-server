@@ -4,5 +4,9 @@
   "C_Cpp.updateChannel": "Insiders",
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "explorer.confirmDragAndDrop": false,
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  }
 }
