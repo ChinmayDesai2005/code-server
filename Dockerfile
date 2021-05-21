@@ -35,7 +35,7 @@ RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
 RUN sudo apt-get install -y nodejs
 RUN git config --global user.name "Kavin Shanbhag"
 RUN git config --global user.email "kavinplays@icloud.com"
-sudo apt-get install build-essential gdb
+RUN sudo apt-get install build-essential gdb -y
 
 # Port
 ENV PORT=8080
