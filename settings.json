@@ -1,6 +1,7 @@
 {
   "workbench.colorTheme": "Default Dark+",
   "git.postCommitCommand": "sync",
+  "C_Cpp.updateChannel": "Insiders",
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
   "git.autofetch": true
