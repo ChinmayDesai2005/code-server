@@ -36,7 +36,7 @@ RUN sudo apt-get install -y nodejs
 RUN git config --global user.name "Kavin Shanbhag"
 RUN git config --global user.email "kavinplays@icloud.com"
 RUN sudo apt-get install build-essential gdb -y
-RUN code-server --install-extension ms-vscode.cpptools
+# RUN code-server --install-extension ms-vscode.cpptools
 
 # Port
 ENV PORT=8080
