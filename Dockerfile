@@ -35,9 +35,6 @@ RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
 RUN sudo apt-get install -y nodejs
 RUN sudo apt-get install python3
 RUN sudo apt-get install -y python3-pip
-RUN sudo apt-get install software-properties-common -y \
-  sudo add-apt-repository ppa:deadsnakes/ppa -y \
-  sudo apt-get install python3.9
 RUN sudo pip3 install nest-asyncio
 RUN sudo pip3 install requests
 RUN sudo pip3 install discord.py
@@ -46,6 +43,9 @@ RUN sudo pip3 install pymongo
 RUN sudo pip3 install deta
 RUN sudo pip3 install pytz
 RUN code-server --install-extension ms-python.python
+RUN sudo add-apt-repository ppa:deadsnakes/ppa -y \
+  sudo apt-get install software-properties-common -y \
+  sudo apt-get install python3.9
 RUN git config --global user.name "Kavin Shanbhag"
 RUN git config --global user.email "kavinplays@icloud.com"
 
