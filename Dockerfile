@@ -34,10 +34,10 @@ RUN sudo chown -R coder:coder /home/coder/.local
 RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
 RUN sudo apt-get install -y nodejs
 RUN sudo apt-get install -y software-properties-common
+RUN sudo apt-get install -y python3-pip
 RUN sudo apt-get update
 RUN sudo add-apt-repository ppa:deadsnakes/ppa -y && \
   sudo apt-get install python3.9
-RUN sudo apt-get install -y python3-pip
 RUN sudo pip3 install nest-asyncio
 RUN sudo pip3 install requests
 RUN sudo pip3 install discord.py
