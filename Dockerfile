@@ -44,8 +44,8 @@ RUN sudo pip3 install deta
 RUN sudo pip3 install pytz
 RUN code-server --install-extension ms-python.python
 RUN sudo apt-get install -y software-properties-common
-RUN sudo add-apt-repository ppa:deadsnakes/ppa -y \
-  sudo apt-get install python3.9
+RUN sudo add-apt-repository ppa:deadsnakes/ppa -y
+RUN sudo apt-get install python3.9
 RUN git config --global user.name "Kavin Shanbhag"
 RUN git config --global user.email "kavinplays@icloud.com"
 
