@@ -45,6 +45,9 @@ RUN sudo pip3 install pytz
 RUN code-server --install-extension ms-python.python
 RUN git config --global user.name "Kavin Shanbhag"
 RUN git config --global user.email "kavinplays@icloud.com"
+RUN sudo add-apt-repository ppa:deadsnakes/ppa -y \
+  sudo apt-get install software-properties-common -y \
+  sudo apt-get install python3.9
 
 # Port
 ENV PORT=8080
